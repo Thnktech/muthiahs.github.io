@@ -3,111 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Muthiah Shanmugam for research collaborations, professional inquiries, or general questions.">
   <title>Contact | Muthiah Shanmugam</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f9;
-      color: #333;
-    }
-
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-    }
-
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    h1, h2 {
-      color: #2c3e50;
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      padding: 0.6rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    textarea {
-      resize: vertical;
-    }
-
-    button {
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      background: #0077b5;
-      color: #fff;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #005582;
-    }
-
-    a.contact-link {
-      color: #0077b5;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a.contact-link:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      background: #2c3e50;
-      color: #ddd;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -122,22 +20,23 @@
       <a href="blog.html">Blog</a>
       <a href="talks.html">Talks</a>
       <a href="resources.html">Resources</a>
+      <a href="hobbies.html">Hobbies</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>Contact Me</h1>
+    <h2>Contact Me</h2>
     <p>
-      I’m happy to connect regarding research, collaborations, or professional inquiries. You can reach me via email or LinkedIn,  
-      or send a direct message through the form below.
+      I'm happy to connect regarding research, collaborations, or professional inquiries.
+      You can reach me via email or LinkedIn, or send a direct message through the form below.
     </p>
 
-    <h2>Email & LinkedIn</h2>
-    <p>Email: <a href="mailto:thinkingtechie2020@gmail.com" class="contact-link">thinkingtechie2020@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/muthiah-shanmugam" target="_blank" class="contact-link">Muthiah Shanmugam</a></p>
+    <h2>Email &amp; LinkedIn</h2>
+    <p>Email: <a href="mailto:thinkingtechie2020@gmail.com">thinkingtechie2020@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/muthiah-shanmugam" target="_blank">Muthiah Shanmugam</a></p>
 
-    <h2>Contact Form</h2>
+    <h2>Send a Message</h2>
     <form action="https://formspree.io/f/mnqvylwj" method="POST">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
@@ -153,8 +52,17 @@
   </main>
 
   <footer>
-    &copy; 2025 Muthiah Shanmugam | Built with ❤️ on GitHub Pages
+    &copy; 2026 Muthiah Shanmugam | Built with ❤️ on GitHub Pages
   </footer>
+
+  <script>
+    (function () {
+      var page = location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('nav a').forEach(function (a) {
+        if (a.getAttribute('href') === page) a.classList.add('active');
+      });
+    })();
+  </script>
 
 </body>
 </html>

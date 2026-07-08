@@ -27,16 +27,6 @@ header {
   text-align: center;
 }
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1abc9c;
-  display: block;
-  margin: 0 auto 1rem;
-}
-
 header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -444,11 +434,6 @@ footer {
 
   header h1 {
     font-size: 1.6rem;
-  }
-
-  .profile-img {
-    width: 120px;
-    height: 120px;
   }
 }
 
